@@ -10,3 +10,11 @@ vim.cmd([[
   hi CursorInsert guifg=#FF0000 guibg=NONE,
   hi CursorReplace guifg=#FFFF00 guibg=NONE
 ]])
+
+local uname = vim.uv.os_uname()
+
+if uname.sysname == "Windows_NT" then
+  vim.o.titlestring = "NeovideLin"
+elseif uname.sysname == "Linux" then
+  vim.o.titlestring = "NeovideWin"
+end
