@@ -13,6 +13,8 @@ vim.cmd([[
 
 local uname = vim.uv.os_uname()
 
+vim.o.title = true
+
 if uname.sysname == "Windows_NT" then
   vim.o.titlestring = "NeovideLin"
 elseif uname.sysname == "Linux" then
