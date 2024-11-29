@@ -10,6 +10,11 @@ return {
 
 				formatters_by_ft = {
 					lua = { "stylua" },
+					bzl = { "buildifier" },
+					starlark = { "buildifier" },
+					typescript = { { "prettierd", "prettierd" } },
+					javascript = { { "prettierd", "prettierd" } },
+					typescriptreact = { { "prettierd", "prettierd" } },
 				},
 			})
 		end,

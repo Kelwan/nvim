@@ -1,7 +1,10 @@
 return {
 	{
 		"stevearc/oil.nvim",
-		opts = {},
+		opts = {
+			default_file_explorer = true,
+		},
+		lazy = false,
 		keys = {
 			{
 				"<leader>d",

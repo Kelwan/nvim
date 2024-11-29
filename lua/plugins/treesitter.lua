@@ -43,4 +43,21 @@ return {
 		"nvim-treesitter/nvim-treesitter",
 		config = treesitter_config,
 	},
+	{
+		"nvim-treesitter/nvim-treesitter-context",
+		event = "VeryLazy",
+		opts = {},
+		dependencies = {
+			"nvim-treesitter/nvim-treesitter",
+		},
+		keys = {
+			{
+				"[c",
+				function()
+					require("treesitter-context").go_to_context(vim.v.count1)
+				end,
+				desc = "Go to context",
+			},
+		},
+	},
 }
