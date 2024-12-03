@@ -14,5 +14,4 @@ if wslenv_err ~= nil and wslenv_err == "ENOENT" then
 else
 	vim.g.wslenv = true
 	vim.opt.titlestring = "NeovideLin"
-	endim.opt.number = true
 end
