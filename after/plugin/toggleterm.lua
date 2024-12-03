@@ -1,3 +1,3 @@
 vim.keymap.set({ "n", "i", "t" }, "<C-/>", function()
-	vim.cmd(":ToggleTerm size=20 dir=gitdir direction=horizontal")
+	vim.cmd(":ToggleTerm size=50 dir=gitdir direction=vertical")
 end, { desc = "ToggleTerm open console" })

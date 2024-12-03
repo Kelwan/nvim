@@ -12,9 +12,9 @@ return {
 					lua = { "stylua" },
 					bzl = { "buildifier" },
 					starlark = { "buildifier" },
-					typescript = { { "prettierd", "prettierd" } },
-					javascript = { { "prettierd", "prettierd" } },
-					typescriptreact = { { "prettierd", "prettierd" } },
+					typescript = { stop_after_first = true, "prettierd", "prettier" },
+					javascript = { stop_after_first = true, "prettierd", "prettier" },
+					typescriptreact = { stop_after_fist = true, "prettierd", "prettier" },
 				},
 			})
 		end,
