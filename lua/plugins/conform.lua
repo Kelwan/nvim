@@ -15,6 +15,7 @@ return {
 					typescript = { stop_after_first = true, "prettierd", "prettier" },
 					javascript = { stop_after_first = true, "prettierd", "prettier" },
 					typescriptreact = { stop_after_fist = true, "prettierd", "prettier" },
+					json = { stop_after_first = true, "prettierd", "prettier" },
 				},
 			})
 		end,

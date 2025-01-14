@@ -15,3 +15,9 @@ else
 	vim.g.wslenv = true
 	vim.opt.titlestring = "NeovideLin"
 end
+
+vim.api.nvim_create_autocmd("TextYankPost", {
+	callback = function()
+		vim.highlight.on_yank({ timeout = 90 })
+	end,
+})
