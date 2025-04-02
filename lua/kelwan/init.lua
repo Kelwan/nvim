@@ -4,6 +4,7 @@ vim.opt.tabstop = 4
 vim.opt.shiftwidth = 4
 vim.opt.clipboard = "unnamedplus"
 vim.opt.relativenumber = true
+vim.opt.number = true
 
 vim.opt.title = true
 
@@ -21,3 +22,11 @@ vim.api.nvim_create_autocmd("TextYankPost", {
 		vim.highlight.on_yank({ timeout = 90 })
 	end,
 })
+
+vim.keymap.set("n", "<C-=>", function()
+	vim.g.neovide_scale_factor = vim.g.neovide_scale_factor + 0.1
+end, { desc = "Zoom in" })
+
+vim.keymap.set("n", "<C-->", function()
+	vim.g.neovide_scale_factor = vim.g.neovide_scale_factor - 0.1
+end, { desc = "Zoom out" })

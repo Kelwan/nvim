@@ -11,3 +11,4 @@ vim.keymap.set("n", "grr", builtin.lsp_references, { desc = "Telescope LSP refer
 
 vim.keymap.set("n", "<leader>gc", builtin.git_commits, { desc = "Telescope git commits" })
 vim.keymap.set("n", "<leader>gb", builtin.git_branches, { desc = "Telescope git branches" })
+vim.keymap.set({ "n" }, "gd", "<cmd>Telescope lsp_definitions<cr>", { desc = "Goto Definition" })
