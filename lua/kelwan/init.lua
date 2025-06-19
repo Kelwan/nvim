@@ -4,8 +4,10 @@ vim.opt.tabstop = 4
 vim.opt.shiftwidth = 4
 vim.opt.clipboard = "unnamedplus"
 vim.opt.relativenumber = true
-vim.opt.number = true
 
+vim.opt.guifont = "FiraCode Nerd Font"
+
+vim.opt.number = true
 vim.opt.title = true
 
 local _, _, wslenv_err = vim.uv.os_getenv("WSLENV", 1)

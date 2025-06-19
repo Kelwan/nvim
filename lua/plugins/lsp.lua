@@ -17,10 +17,12 @@ local lsp_setup_handlers = {
 return {
 	{
 		"williamboman/mason.nvim",
+		version = "^1.0.0",
 		opts = {},
 	},
 	{
 		"williamboman/mason-lspconfig.nvim",
+		version = "^1.0.0",
 		config = function()
 			require("mason-lspconfig").setup({
 				automatic_installation = true,
