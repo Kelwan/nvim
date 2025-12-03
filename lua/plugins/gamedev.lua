@@ -149,10 +149,16 @@ local function telescope_unreal_headers()
 end
 return {
 	{
+		"j-hui/fidget.nvim",
+		opts = {},
+	},
+	{
 		"zaucy/uproject.nvim",
 		dependencies = {
 			"nvim-lua/plenary.nvim",
+			"lewis6991/async.nvim",
 			"j-hui/fidget.nvim",
+			"zaucy/perforce.nvim",
 		},
 		cmd = { "Uproject" },
 		lazy = false,
@@ -169,7 +175,12 @@ return {
 				desc = "Build and Open",
 			},
 			{
-				"<leader>ur",
+				"<leader>us",
+				"<cmd>Uproject submit<cr>",
+				desc = "Open Submit TOol",
+			},
+			{
+				"<leader>uR",
 				"<cmd>Uproject reload show_output<cr>",
 				desc = "Reload Uproject",
 			},
@@ -233,5 +244,22 @@ return {
 	},
 	{
 		"https://github.com/ngemily/vim-vp4",
+		keys = {
+			{
+				"<leader>ve",
+				"<cmd>Vp4Edit<cr>",
+				desc = "Perforce Edit",
+			},
+			{
+				"<leader>va",
+				"<cmd>Vp4Add<cr>",
+				desc = "Perforce Add",
+			},
+			{
+				"<leader>vr",
+				"<cmd>Vp4Revert<cr>",
+				desc = "Perforce Revert",
+			},
+		},
 	},
 }

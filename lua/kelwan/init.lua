@@ -1,14 +1,19 @@
 require("kelwan.remap")
+require("kelwan.term")
 
 vim.opt.tabstop = 4
 vim.opt.shiftwidth = 4
 vim.opt.clipboard = "unnamedplus"
 vim.opt.relativenumber = true
+vim.opt.swapfile = false
+vim.opt.shadafile = "NONE"
 
 vim.opt.guifont = "FiraCode Nerd Font"
 
 vim.opt.number = true
 vim.opt.title = true
+
+vim.lsp.log.set_level("off")
 
 local _, _, wslenv_err = vim.uv.os_getenv("WSLENV", 1)
 if wslenv_err ~= nil and wslenv_err == "ENOENT" then

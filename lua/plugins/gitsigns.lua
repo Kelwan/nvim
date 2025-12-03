@@ -3,7 +3,7 @@ return {
 	lazy = false,
 	opts = {
 		current_line_blame = true,
-		curent_line_blame_opts = {
+		current_line_blame_opts = {
 			delayed = 0,
 		},
 	},
